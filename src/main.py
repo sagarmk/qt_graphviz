@@ -61,9 +61,6 @@ class MainWindow(QMainWindow):
         self.setCentralWidget(central_widget)
 
     def build_flowchart(self):
-            """
-            Generates an SVG flowchart from the input DOT code using Graphviz.
-            """
 
             dot_code = self.dot_editor.toPlainText()
             gptquery = GPT()
